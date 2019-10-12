@@ -11,11 +11,11 @@ firebase.auth().onAuthStateChanged(function (user) {
         if (displayName === null) {
             window.location = "/student-registration.html";
         } else {
-            document.getElementById('greetings').innerHTML = 'HELLO ' + displayName.toUpperCase() + '!<br/>WELCOME TO Internship Fair 2019';
+            document.getElementById('greetings').innerHTML = 'HELLO ' + displayName.toUpperCase() + '!<br/>WELCOME TO Jashn-e-Entrepreneurship 2.0';
         }
         console.log("user change", user);
     } else {
-        document.getElementById('greetings').innerHTML = 'HELLO! WELCOME TO Internship Fair 2019';
+        document.getElementById('greetings').innerHTML = 'HELLO! WELCOME TO Jashn-e-Entrepreneurship 2.0';
         document.getElementById('login-button').innerHTML = 'Login';
     }
 });
